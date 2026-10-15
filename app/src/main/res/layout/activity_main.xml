@@ -45,12 +45,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="32dp"/>
 
-    <!-- Login button: updated width constraints to split horizontal space evenly -->
+    <!-- Login button: applied black background with white text -->
     <Button
         android:id="@+id/loginButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Log In"
+        android:textColor="#FFFFFF"
+        android:background="#000000"
+        app:backgroundTint="@null"
         app:layout_constraintTop_toBottomOf="@id/passwordInput"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,12 +61,15 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="8dp"/>
 
-    <!-- Newly added: Cancel button -->
-    git status<Button
+    <!-- Cancel button: applied black background with white text -->
+    <Button
         android:id="@+id/cancelButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Cancel"
+        android:textColor="#FFFFFF"
+        android:background="#000000"
+        app:backgroundTint="@null"
         app:layout_constraintTop_toTopOf="@id/loginButton"
         app:layout_constraintBottom_toBottomOf="@id/loginButton"
         app:layout_constraintStart_toEndOf="@id/loginButton"
@@ -72,3 +78,4 @@
         android:layout_marginEnd="32dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+git
