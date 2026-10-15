@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Welcome Back TextView: horizontal centering constraints added -->
+    <!-- Welcome Back title -->
     <TextView
         android:id="@+id/textViewWelcome"
         android:layout_width="wrap_content"
@@ -45,16 +45,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="32dp"/>
 
-    <!-- Login button -->
+    <!-- Login button: updated width constraints to split horizontal space evenly -->
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Log In"
         app:layout_constraintTop_toBottomOf="@id/passwordInput"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cancelButton"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Newly added: Cancel button -->
+    git status<Button
+        android:id="@+id/cancelButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintTop_toTopOf="@id/loginButton"
+        app:layout_constraintBottom_toBottomOf="@id/loginButton"
+        app:layout_constraintStart_toEndOf="@id/loginButton"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginHorizontal="32dp"/>
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
